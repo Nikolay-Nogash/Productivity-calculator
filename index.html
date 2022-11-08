@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/modal.css">
+    <link rel="stylesheet" href="./css/modal-two.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>LPP Сalculation productivity</title>
+</head>
+<body>
+ <!-- main HTML code -->
+<section class="main">
+    <div class="main_wrapper">
+        <div class="main_wrapper-img">
+            <img src="./icons/lpp_icon.png" alt="">
+        </div>
+        
+        <div main_wrapper_btn>
+            <div><button class="start_calc-hrs">Розрахувати HRS</button></div>
+            <div><button class="start_calc-prod">Розрахувати PROD</button></div>
+        </div>
+    </div>
+</section>
+ <!-- modal N% 1 calculate HRS  -->
+<div class="modal">
+    <div class="modal-overlay">
+        <div class="modal-window">
+            <div class="modal-header">
+                <span class="modal-title">Розрахунок HRS</span>
+            </div>
+            
+            <div class="modal-body">
+                <div class="modal-body-input1">
+                    <h3 class="modal-body-title">Введіть кількість одиниць:</h3>
+                    <input class="HRS" placeholder="Кількість одиниць" type="number">
+                </div>
+                <div class="modal-body-input2">
+                    <h3 class="modal-body-title">Введіть кількість працівників:</h3>
+                    <input class="HRS" placeholder="Кількість працівників" type="number">
+                </div>
+            </div>
+
+            <div class="modal-btn"><button id="res_HRS" class="btn">Отримати результат</button></div>
+
+            <div class="modal-result">
+                <h3 class="modal-res">Прийняти за:</h3>
+                <h3 class="result"></h3>
+            </div>
+
+            <div class="modal-finish"><button class="finishHRS">На головну</button></div>
+        </div>
+    </div>
+</div>
+ 
+ <!-- modal N% 2 calculate PROD  -->
+<div class="modal_two">
+    <div class="modal_two-overlay">
+        <div class="modal_two-window">
+            <div class="modal_two-header">
+                <span class="modal_two-title">Розрахунок PROD</span>
+            </div>
+            
+            <div class="modal_two-body">
+                <div class="modal_two-body-input1">
+                    <h3 class="modal_two-body-title">Введіть кількість одиниць:</h3>
+                    <input class="PROD" placeholder="Кількість одиниць" type="number">
+                </div>
+                <div class="modal_two-body-input2">
+                    <h3 class="modal_two-body-title">Введіть кількість працівників:</h3>
+                    <input class="PROD" placeholder="Кількість працівників" type="number">
+                </div>
+                <div class="modal_two-body-input3">
+                    <h3 class="modal_two-body-title">Введіть кількість затраченого часу:</h3>
+                    <input class="PROD" placeholder="Кількість часу (хв)" type="number">
+                </div>
+            </div>
+
+            <div class="modal_two-btn"><button id="res_PROD" class="btn_two">Отримати результат</button></div>
+
+            <div class="modal_two-result">
+                <h3 class="modal_two-res">Ваша продуктивність:</h3>
+                <h3 class="result_two"></h3>
+            </div>
+
+            <div class="modal_two-finish"><button class="finishPROD">На головну</button></div>
+        </div>
+    </div>
+</div>
+
+
+
+<script src="./js/index.js"></script>
+</body>
+</html>
