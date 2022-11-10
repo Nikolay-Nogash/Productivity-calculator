@@ -33,17 +33,19 @@
             </div>
             
             <div class="modal-body">
+                <form action="#">
                 <div class="modal-body-input1">
                     <h3 class="modal-body-title">Введіть кількість одиниць:</h3>
-                    <input class="HRS" placeholder="Кількість одиниць" type="number">
+                    <input class="HRS" placeholder="Кількість одиниць" type="number" required>
                 </div>
                 <div class="modal-body-input2">
                     <h3 class="modal-body-title">Введіть кількість працівників:</h3>
-                    <input class="HRS" placeholder="Кількість працівників" type="number">
+                    <input class="HRS" placeholder="Кількість працівників" type="number" required>
                 </div>
             </div>
 
-            <div class="modal-btn"><button id="res_HRS" class="btn">Отримати результат</button></div>
+                    <div class="modal-btn"><button id="res_HRS" class="btn">Отримати результат</button></div>
+                </form>
 
             <div class="modal-result">
                 <h3 class="modal-res">Прийняти за:</h3>
@@ -64,22 +66,23 @@
             </div>
             
             <div class="modal_two-body">
+                <form action="#">
                 <div class="modal_two-body-input1">
                     <h3 class="modal_two-body-title">Введіть кількість одиниць:</h3>
-                    <input class="PROD" placeholder="Кількість одиниць" type="number">
+                    <input class="PROD" placeholder="Кількість одиниць" type="number" required>
                 </div>
                 <div class="modal_two-body-input2">
                     <h3 class="modal_two-body-title">Введіть кількість працівників:</h3>
-                    <input class="PROD" placeholder="Кількість працівників" type="number">
+                    <input class="PROD" placeholder="Кількість працівників" type="number" required>
                 </div>
                 <div class="modal_two-body-input3">
                     <h3 class="modal_two-body-title">Введіть кількість затраченого часу:</h3>
-                    <input class="PROD" placeholder="Кількість часу (хв)" type="number">
+                    <input class="PROD" placeholder="Кількість часу (хв)" type="number" required>
                 </div>
             </div>
 
-            <div class="modal_two-btn"><button id="res_PROD" class="btn_two">Отримати результат</button></div>
-
+                <div class="modal_two-btn"><button id="res_PROD" class="btn_two">Отримати результат</button></div>
+                </form>
             <div class="modal_two-result">
                 <h3 class="modal_two-res">Ваша продуктивність:</h3>
                 <h3 class="result_two"></h3>
@@ -89,8 +92,6 @@
         </div>
     </div>
 </div>
-
-
 
 <script src="./js/index.js"></script>
 </body>
