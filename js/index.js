@@ -39,7 +39,6 @@ const modalPROD = document.querySelector('.modal_two'),
 // Функції
 // відкриття-закриття модельних вікон
 function openModal(openHRS, openPROD, closeHRS, closePROD) {
-    document.body.style.overflow = "hidden";
     openHRS.addEventListener('click', e => {
         e.target = modalHRS.style.visibility = 'visible';
         windowHRS.style.transition = '0.8s';
