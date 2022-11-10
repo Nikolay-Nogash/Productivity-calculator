@@ -23,6 +23,10 @@ const resHRS = document.querySelector('#res_HRS'),
       resPROD = document.querySelector('#res_PROD');
 
 // Виклик функцій при кліку
+window.addEventListener('click', e => {
+    e.preventDefault();
+}, false);
+
 resHRS.addEventListener('click', calcHRS);
 resPROD.addEventListener('click', calcPROD);
 
@@ -36,7 +40,7 @@ const modalPROD = document.querySelector('.modal_two'),
 // відкриття-закриття модельних вікон
 function openModal(openHRS, openPROD, closeHRS, closePROD) {
     document.body.style.overflow = "hidden";
-    openHRS.addEventListener('click', e => { 
+    openHRS.addEventListener('click', e => {
         e.target = modalHRS.style.visibility = 'visible';
         windowHRS.style.transition = '0.8s';
         windowHRS.style.transform = 'scale(1)';
@@ -75,7 +79,6 @@ function calcHRS() {
     } else {
         let finishRes = (x[0] / prod / x[1] * hv).toFixed(1);
         screenHRS.style.visibility = 'visible';
-        
         return valueHRS.textContent = `${finishRes} хв`;
     }       
 }
